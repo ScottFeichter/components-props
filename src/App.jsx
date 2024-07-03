@@ -11,11 +11,18 @@ function App() {
     spDef: 65,
     speed: 45,
   };
+
+  const handleClick = ()=> {
+    alert(
+      `Special Stats\n\tSpecial Attack: ${baseStatsPOJO.spAttack}\n\tSpecial Defense: ${baseStatsPOJO.spDef}`
+    );
+  }
+
   console.log(BaseStats);
   return (
     <div className='main-wrapper background'>
       <Showcase />
-      <BaseStats baseStats={baseStatsPOJO}/>
+      <BaseStats baseStats={baseStatsPOJO} clicker={handleClick}/>
     </div>
   );
 }

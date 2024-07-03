@@ -1,9 +1,10 @@
 import "../BaseStats.css";
 
-function BaseStats({baseStats:{hp,attack,defense,speed}}) {
+function BaseStats({clicker, baseStats:{hp,attack,defense,speed}}) {
     return (
         <div className="base-stats">
             <h1>BaseStats</h1>
+            <button onClick={clicker} className="sp-stats">Check Special Stats</button>
             <table>
   <tbody>
     <tr>
